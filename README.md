@@ -1,3 +1,120 @@
+
+# Table of Contents
+
+- [Project Description](#project-description)
+  - [Collaborators](#collaborators)
+- [Design](#design)
+- [Development](#development)
+  - [Functional Goals](#functional-goals)
+    - [MVP](#mvp)
+    - [Post-MVP](#post-mvp)
+    - [User Stories](#user-stories)
+  - [Functional Heirarchy](#functional-heirarchy)
+    - [Repo Structure](#repo-structure)
+  - [Functional Components](#functional-components)
+    - [Component Breakdown](#component-breakdown)
+    - [Component Timeframes](#component-timeframes)
+    - [Helper Functions](#helper-functions)
+  - [Supporting Libraries](#supporting-libraries)
+  - [Conventions](#conventions)
+- [Project Review](#project-review)
+  - [Code Showcase](#code-showcase)
+  - [Bugs, Issues, and Resolutions](#issues-&-resolutions)
+- [Project Followup](#project-followup)
+
+# Project Overview
+
+Tree tracking App is a web application where users can add the trees they are planting on their property, and include sprcific such as type of tree, age of tree and date planted.
+
+Users can also edit and delete the information they have added to the list. 
+
+### Collaborators
+* [Jasmine Carpentier](https://github.com/jascarpentier)
+
+# Design 
+
+
+
+# Development
+
+## Functional Goals
+
+### MVP 
+
+Users will be able to add data to the list, including their full name, address, type of tree planted, age of tree and date planted. 
+
+
+### POST MVP
+
+- Addind registration, login, and logout 
+- Adding reporting for aggredated data of the types of tree, age and other data about the tree
+- Implement custom fields that the user can add different data about their tree
+- Adding a map API, so you can have a map view of where all the trees are planted
+- Add persistence (permanent data storage). What data storage platform did you use? Why?
+
+## User Stories 
+ * I'm a goverment worker for the city and I want to check on how the tree planting initiative is going.
+ * I'm a citizen of the city, that wants to participate and log the trees I have planted on my property.
+ * I'm an enviromentalist who wants to do more research of how well a certain city is doing in terms of adding more green and trees to their city
+
+## Functional Heirarchy
+
+## Functional Components
+
+```
+    |___ Enter Page
+         |___ Sign-up Form
+         |___ Login Form
+
+    |___ Header
+    |___ Hero
+    |___ Menu
+         |___ Home
+         |___ Tree planting data of my city
+         |___ My Profile
+
+    |___ My Profile Page
+      
+    |___ My personal tree planting data
+
+    |___ My cities tree planting statistics
+
+    |___ Footer 
+
+```
+
+### ERD
+
+
+
+### Supporting Libraries
+
+* React
+* Express
+
+### Git
+
+#### Branching
+
+Open terminal to your development branch; pull to ensure most recent merge.
+> git pull origin development
+
+Next, create your new branch from your updated development branch:
+> git checkout -b {initials}-{branch type}-{component} development
+> git push --set-upstream origin {initials}-{branch type}-{component}
+
+Now, proceed to work on your component; add/commit as necessary:
+> git add .
+> git commit -m "{Message}"
+
+#### Merging
+
+Once you're ready to merge, confirm again that you have the most recent development branch updates:
+> git pull origin development
+
+Then proceed to GitHub, submit a new Pull Request. Confirm comparison is:
+> from Development to {Your Branch}
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,32 +156,21 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Tree tracking Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This is the central repo for the tree tracking app. Where the city has access to a list information about trees planted on their citizens property.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+#### Component Structuring & Naming
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+<div className="header">
+  <div className="secondaryNav">
 
-### Analyzing the Bundle Size
+  </div>
+  <div className="primaryNav">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  </div>
+</div>
+```
+# issues-&-resolutions
