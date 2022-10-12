@@ -27,7 +27,7 @@ export default function App() {
           fullName: event.target.fullName.value,
           address: event.target.address.value,
           treeType: event.target.treeType.value,
-          treeAge: event.target.treeDate.value,
+          treeAge: event.target.treeAge.value,
           treeDate: event.target.treeDate.value,
         };
       } else {
@@ -123,7 +123,7 @@ export default function App() {
                   ) : (
                     <textarea
                       name="treeType"
-                      defaultValue={treeThings.Treetype}
+                      defaultValue={treeThings.treeType}
                       style={{ width: "100%" }}
                     ></textarea>
                   )}
@@ -144,8 +144,8 @@ export default function App() {
                     treeThings.treeDate
                   ) : (
                     <textarea
-                      name="treeAge"
-                      defaultValue={treeThings.treeAge}
+                      name="treeDate"
+                      defaultValue={treeThings.treeDate}
                       style={{ width: "100%" }}
                     ></textarea>
                   )}
